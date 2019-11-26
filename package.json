@@ -1,0 +1,18 @@
+{
+  "name": "sec-chain",
+  "version": "1.0.0",
+  "description": "My exceptional Nuxt.js project",
+  "author": "shakksgv",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "ant-design-vue": "^1.1.10"
+  },
+  "devDependencies": {}
+}
