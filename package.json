@@ -11,8 +11,16 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/vuetify": "^1.9.0",
+    "apexcharts": "^3.10.1",
+    "node-sass": "^4.13.0",
     "nuxt": "^2.0.0",
-    "ant-design-vue": "^1.1.10"
+    "nuxt-buefy": "^0.3.19",
+    "sass-loader": "^8.0.0",
+    "timeline-vuejs": "^1.0.10",
+    "vue-apexcharts": "^1.5.1",
+    "vue-light-timeline": "^1.0.3",
+    "vue-plotly": "^1.0.1"
   },
   "devDependencies": {}
 }
