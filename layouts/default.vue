@@ -1,46 +1,40 @@
 <template>
   <div id="layout">
     <b-navbar type="is-primary">
+      <template slot="brand">
+        <b-navbar-item
+          tag="nuxt-link"
+          class="is-size-4"
+          :active="false"
+          to="/"
+        >
+          SecChain
+        </b-navbar-item>
+      </template>
+
+      <template slot="start">
+        <b-navbar-item
+          tag="nuxt-link"
+          :active="$route.name === 'index'"
+          to="/"
+        >Dashboard</b-navbar-item>
+        <b-navbar-item
+          tag="nuxt-link"
+          :active="$route.name.indexOf('threats') === 0"
+          to="/threats"
+        >Threats</b-navbar-item>
+      </template>
+
       <template slot="end">
-        <b-navbar-item tag="div">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
-          </div>
+        <b-navbar-item>
+          <b-icon icon="bell" />
+        </b-navbar-item>
+        <b-navbar-item>
+          <b-icon icon="logout" />
         </b-navbar-item>
       </template>
     </b-navbar>
-
-    <div
-      id="container"
-      class="is-flex"
-    >
-      <div id="menu">
-        <div
-          v-for="i in 5"
-          :key="i"
-          class="media"
-        >
-          <div class="media-left">
-            <b-icon icon="account" />
-          </div>
-          <div class="media-content">
-            <div>Threat name</div>
-            <small class="has-text-grey">21.01.2019</small>
-          </div>
-          <div class="media-right">
-            <b-icon icon="settings" />
-            <b-icon icon="earth" />
-            <b-icon icon="tune" />
-          </div>
-        </div>
-      </div>
-      <nuxt id="page" />
-    </div>
+    <nuxt id="content" />
   </div>
 
 </template>
@@ -52,19 +46,7 @@
   min-height: 100vh;
 }
 
-#container {
-  flex-grow: 1;
-}
-
-#menu {
-  box-shadow: 0 0 10px grey;
-  padding: 1rem 0.5rem;
-  position: relative;
-  width: 350px;
-  z-index: 1;
-}
-
-#page {
+#content {
   flex-grow: 1;
 }
 </style>

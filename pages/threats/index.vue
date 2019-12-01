@@ -1,3 +1,3 @@
 <template>
-  <div>Cases</div>
+  <div />
 </template>

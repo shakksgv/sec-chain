@@ -1,0 +1,446 @@
+{
+  "threats": [
+    {
+      "name": "Attack on server",
+      "date": "11.25.2019",
+      "severity": "Info",
+      "assigned_analist": "John Snow",
+      "status": "Open",
+      "tier": 1,
+      "details": {
+        "comments": [
+          {
+            "author": "John",
+            "text": "Confirmed that server should have any java applications"
+          }
+        ],
+        "entity": {
+          "computer_name": "mymag_server",
+          "ip": "34.23.121.34",
+          "owner": "DevOps"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Threats detected ",
+            "description": "Detected attack for vulnerable product.",
+            "number_event": 3,
+            "time": "10.12.2019 13:54",
+            "signature": "Apache Struts2 Remote Code Execution Vulnerability"
+          },
+          {
+            "source": "JamF software",
+            "name": "Inventory",
+            "description": "No Apache Struts2 ",
+            "time": "10.12.2019 13:58"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.12.2019 13:59",
+            "Malicious_detections": []
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "No malicous dns requrest per last day",
+            "number_event": 100,
+            "time": "10.12.2019 13:59"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Attack on server",
+      "date": "11.25.2019",
+      "severity": "Critical",
+      "assigned_analist": "John Snow",
+      "status": "Closed",
+      "resolution": "Positive",
+      "tier": 1,
+      "details": {
+        "comments": [
+          {
+            "author": "John",
+            "text": "Confirmed that server should have any java applications"
+          }
+        ],
+        "entity": {
+          "computer_name": "mymag_server",
+          "ip": "34.23.121.34",
+          "owner": "DevOps"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Threats detected ",
+            "description": "Detected attack for vulnerable product.",
+            "number_event": 3,
+            "time": "10.12.2019 13:54",
+            "signature": "Apache Struts2 Remote Code Execution Vulnerability"
+          },
+          {
+            "source": "JamF software",
+            "name": "Inventory",
+            "description": "No Apache Struts2 ",
+            "time": "10.12.2019 13:58"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.12.2019 13:59",
+            "Malicious_detections": []
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "No malicous dns requrest per last day",
+            "number_event": 100,
+            "time": "10.12.2019 13:59"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Attack on server",
+      "date": "11.26.2019",
+      "severity": "Info",
+      "assigned_analist": "John Snow",
+      "status": "Closed",
+      "resolution": "F/P",
+      "tier": 1,
+      "details": {
+        "comments": [
+          {
+            "author": "John",
+            "text": "Confirmed that server should have any java applications"
+          }
+        ],
+        "entity": {
+          "computer_name": "mymag_server",
+          "ip": "34.23.121.34",
+          "owner": "DevOps"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Threats detected ",
+            "description": "Detected attack for vulnerable product.",
+            "number_event": 3,
+            "time": "10.12.2019 13:54",
+            "signature": "Apache Struts2 Remote Code Execution Vulnerability"
+          },
+          {
+            "source": "JamF software",
+            "name": "Inventory",
+            "description": "No Apache Struts2 ",
+            "time": "10.12.2019 13:58"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.12.2019 13:59",
+            "Malicious_detections": []
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "No malicous dns requrest per last day",
+            "number_event": 100,
+            "time": "10.12.2019 13:59"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Attack on server",
+      "date": "11.27.2019",
+      "severity": "Info",
+      "assigned_analist": "John Snow",
+      "status": "Closed",
+      "resolution": "F/P",
+      "tier": 1,
+      "details": {
+        "comments": [
+          {
+            "author": "John",
+            "text": "Confirmed that server should have any java applications"
+          }
+        ],
+        "entity": {
+          "computer_name": "mymag_server",
+          "ip": "34.23.121.34",
+          "owner": "DevOps"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Threats detected ",
+            "description": "Detected attack for vulnerable product.",
+            "number_event": 3,
+            "time": "10.12.2019 13:54",
+            "signature": "Apache Struts2 Remote Code Execution Vulnerability"
+          },
+          {
+            "source": "JamF software",
+            "name": "Inventory",
+            "description": "No Apache Struts2 ",
+            "time": "10.12.2019 13:58"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.12.2019 13:59",
+            "Malicious_detections": []
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "No malicous dns requrest per last day",
+            "number_event": 100,
+            "time": "10.12.2019 13:59"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Malicious file",
+      "date": "11.27.2019",
+      "severity": "Critical",
+      "assigned_analist": "John Snow",
+      "status": "Open",
+      "tier": 1,
+      "details": {
+        "comments": [],
+        "entity": {
+          "computer_name": "Computer234",
+          "ip": "10.12.23.45",
+          "owner": "Bill B"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Malicious traffic",
+            "description": "Blocked traffic to destination IP from Dynamic Block Lists.",
+            "number_event": 25,
+            "time": "10.10.2019 13:23",
+            "signature": "connection to DBL host",
+            "dest_host": "23.34.12.23"
+          },
+          {
+            "source": "JamF software",
+            "name": "Application installation logs",
+            "description": "Installed application SuperNews.exe",
+            "number_event": 1,
+            "time": "10.10.2019 13:21"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.10.2019 13:21",
+            "Malicious_detections": [
+              "C://SuperNews.exe"
+            ]
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "DNS request ranked is malicious ",
+            "number_event": 1,
+            "time": "10.10.2019 13:21"
+          },
+          {
+            "source": "VirusTotal",
+            "name": "VirusTotal request",
+            "description": "Check hash of files on virustotla",
+            "number_event": 1,
+            "status": "Malicious",
+            "time": "10.10.2019 13:21"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Attack on server",
+      "date": "11.27.2019",
+      "severity": "Info",
+      "assigned_analist": "John Snow",
+      "status": "Closed",
+      "resolution": "F/P",
+      "tier": 1,
+      "details": {
+        "comments": [
+          {
+            "author": "John",
+            "text": "Confirmed that server should have any java applications"
+          }
+        ],
+        "entity": {
+          "computer_name": "mymag_server",
+          "ip": "34.23.121.34",
+          "owner": "DevOps"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Threats detected ",
+            "description": "Detected attack for vulnerable product.",
+            "number_event": 3,
+            "time": "10.12.2019 13:54",
+            "signature": "Apache Struts2 Remote Code Execution Vulnerability"
+          },
+          {
+            "source": "JamF software",
+            "name": "Inventory",
+            "description": "No Apache Struts2 ",
+            "time": "10.12.2019 13:58"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.12.2019 13:59",
+            "Malicious_detections": []
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "No malicous dns requrest per last day",
+            "number_event": 100,
+            "time": "10.12.2019 13:59"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Malicious file",
+      "date": "12.01.2019",
+      "severity": "Critical",
+      "assigned_analist": "John Snow",
+      "status": "Open",
+      "tier": 1,
+      "details": {
+        "comments": [],
+        "entity": {
+          "computer_name": "Computer234",
+          "ip": "10.12.23.45",
+          "owner": "Bill B"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Malicious traffic",
+            "description": "Blocked traffic to destination IP from Dynamic Block Lists.",
+            "number_event": 25,
+            "time": "10.10.2019 13:23",
+            "signature": "connection to DBL host",
+            "dest_host": "23.34.12.23"
+          },
+          {
+            "source": "JamF software",
+            "name": "Application installation logs",
+            "description": "Installed application SuperNews.exe",
+            "number_event": 1,
+            "time": "10.10.2019 13:21"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.10.2019 13:21",
+            "Malicious_detections": [
+              "C://SuperNews.exe"
+            ]
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "DNS request ranked is malicious ",
+            "number_event": 1,
+            "time": "10.10.2019 13:21"
+          },
+          {
+            "source": "VirusTotal",
+            "name": "VirusTotal request",
+            "description": "Check hash of files on virustotla",
+            "number_event": 1,
+            "status": "Malicious",
+            "time": "10.10.2019 13:21"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Malicious file",
+      "date": "12.01.2019",
+      "severity": "Critical",
+      "assigned_analist": "John Snow",
+      "status": "Closed",
+      "resolution": "F/P",
+      "tier": 1,
+      "details": {
+        "comments": [],
+        "entity": {
+          "computer_name": "Computer234",
+          "ip": "10.12.23.45",
+          "owner": "Bill B"
+        },
+        "alerts": [
+          {
+            "source": "PaloAlto FireWall",
+            "name": "Malicious traffic",
+            "description": "Blocked traffic to destination IP from Dynamic Block Lists.",
+            "number_event": 25,
+            "time": "10.10.2019 13:23",
+            "signature": "connection to DBL host",
+            "dest_host": "23.34.12.23"
+          },
+          {
+            "source": "JamF software",
+            "name": "Application installation logs",
+            "description": "Installed application SuperNews.exe",
+            "number_event": 1,
+            "time": "10.10.2019 13:21"
+          },
+          {
+            "source": "Nessus",
+            "name": "Nessus scan ",
+            "description": "Scan performed by playbook",
+            "number_event": 1,
+            "time": "10.10.2019 13:21",
+            "Malicious_detections": [
+              "C://SuperNews.exe"
+            ]
+          },
+          {
+            "source": "Umbrella",
+            "name": "Umbrella check",
+            "description": "DNS request ranked is malicious ",
+            "number_event": 1,
+            "time": "10.10.2019 13:21"
+          },
+          {
+            "source": "VirusTotal",
+            "name": "VirusTotal request",
+            "description": "Check hash of files on virustotla",
+            "number_event": 1,
+            "status": "Malicious",
+            "time": "10.10.2019 13:21"
+          }
+        ]
+      }
+    }
+  ]
+}
