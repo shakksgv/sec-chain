@@ -15,8 +15,11 @@
           <b-icon
             icon="alert"
             :class="{
+                'has-text-grey': threat.severity === 'Info',
+                'has-text-grey': threat.severity === 'Low',
+                'has-text-warning': threat.severity === 'Medium',
+                'has-text-danger': threat.severity === 'High',
                 'has-text-danger': threat.severity === 'Critical',
-                'has-text-warning': threat.severity === 'Info',
             }"
           />
         </div>

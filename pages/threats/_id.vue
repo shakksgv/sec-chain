@@ -31,6 +31,9 @@
             &nbsp; Severity: &nbsp;
             <b-select v-model="threat.severity">
               <option value="Info">Info</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
               <option value="Critical">Critical</option>
             </b-select>
           </div>

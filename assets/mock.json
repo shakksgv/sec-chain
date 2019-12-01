@@ -3,7 +3,7 @@
     {
       "name": "Attack on server",
       "date": "11.25.2019",
-      "severity": "Info",
+      "severity": "Medium",
       "assigned_analist": "John Snow",
       "status": "Open",
       "resolution": "",

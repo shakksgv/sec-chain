@@ -30,7 +30,7 @@
                     label="Severity"
                     width="100"
                   >
-                    <b-tag :type="row.severity === 'Info' ? 'is-warning' : 'is-danger'">{{ row.severity }}</b-tag>
+                    <b-tag :type="severityType(row.severity)">{{ row.severity }}</b-tag>
                   </b-table-column>
                   <b-table-column label="Name">
                     <nuxt-link
@@ -242,6 +242,19 @@ export default {
         name: 'Threats',
         data,
       }];
+    },
+  },
+  methods: {
+    severityType (severity) {
+      switch (severity) {
+        case 'Medium':
+          return 'is-warning';
+        case 'High':
+        case 'Critical':
+          return 'is-danger';
+        default:
+          return 'is-grey';
+      }
     },
   },
 }
