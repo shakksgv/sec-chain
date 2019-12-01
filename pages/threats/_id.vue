@@ -12,7 +12,10 @@
             {{ threat.date }}
           </div>
           <div class="level-left">Resolution: &nbsp;
-            <b-select v-model="threat.resolution">
+            <b-select
+              size="is-small"
+              v-model="threat.resolution"
+            >
               <option value="">None</option>
               <option value="F/P">F/P</option>
               <option value="Positive">Positive</option>
@@ -29,7 +32,10 @@
               size="is-small"
             />
             &nbsp; Severity: &nbsp;
-            <b-select v-model="threat.severity">
+            <b-select
+              size="is-small"
+              v-model="threat.severity"
+            >
               <option value="Info">Info</option>
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
@@ -185,7 +191,7 @@ export default {
   }),
   computed: {
     threat () {
-      return Mock.threats[this.$route.params.id];
+      return Mock.threats.find(threat => this.$route.params.id == threat.id);
     },
     series () {
       return [
@@ -203,10 +209,10 @@ export default {
 
 <style lang="scss" scoped>
 .media {
+  flex: 1 0 auto;
   margin: 0;
   padding: 0.5rem;
   padding-left: 2rem;
-  width: 50%;
 
   &.grow {
     border-left: 1px solid lightgrey;

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/vuetify": "^1.9.0",
+    "animated-number-vue": "^1.0.0",
     "apexcharts": "^3.10.1",
     "node-sass": "^4.13.0",
     "nuxt": "^2.0.0",

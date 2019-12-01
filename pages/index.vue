@@ -6,15 +6,35 @@
           <div class="column">
             <div class="box">
               <h3 class="title">Today</h3>
-              <div>Total threats: {{ newToday }}</div>
-              <div>Open threats: {{ openToday }}</div>
+              <div>Total threats:
+                <animated-number
+                  :value="newToday"
+                  round=1
+                />
+              </div>
+              <div>Open threats:
+                <animated-number
+                  :value="openToday"
+                  round=1
+                />
+              </div>
             </div>
           </div>
           <div class="column">
             <div class="box">
               <h3 class="title">All time</h3>
-              <div>Total threats: {{ total }}</div>
-              <div>Open threats: {{ open }}</div>
+              <div>Total threats:
+                <animated-number
+                  :value="total"
+                  round=1
+                />
+              </div>
+              <div>Open threats:
+                <animated-number
+                  :value="open"
+                  round=1
+                />
+              </div>
             </div>
           </div>
 
@@ -24,26 +44,44 @@
                 <h2 class="title is-marginless">Latest threats</h2>
                 <nuxt-link to="/threats">See all</nuxt-link>
               </div>
-              <b-table :data="threats.slice(0, 5)">
-                <template v-slot="{ row, index }">
+              <b-table
+                :data="threats.slice(0, 5)"
+                hoverable
+                striped
+              >
+                <template v-slot="{ row }">
                   <b-table-column
                     label="Severity"
+                    sortable
                     width="100"
+                    field="severity"
                   >
                     <b-tag :type="severityType(row.severity)">{{ row.severity }}</b-tag>
                   </b-table-column>
-                  <b-table-column label="Name">
+                  <b-table-column
+                    label="Name"
+                    field="name"
+                    sortable
+                  >
                     <nuxt-link
                       class="has-text-dark"
-                      :to="{ name: 'threats-id', params: { id: index } }"
+                      :to="{ name: 'threats-id', params: { id: row.id } }"
                     >
                       <u>{{ row.name }}</u>
                     </nuxt-link>
                   </b-table-column>
-                  <b-table-column label="Status">
+                  <b-table-column
+                    label="Status"
+                    field="status"
+                    sortable
+                  >
                     <b-tag :type="row.status === 'Open' ? 'is-primary' : ''">{{ row.status }}</b-tag>
                   </b-table-column>
-                  <b-table-column label="Resolution">{{ row.resolution }}</b-table-column>
+                  <b-table-column
+                    label="Resolution"
+                    field="resolution"
+                    sortable
+                  >{{ row.resolution || 'None' }}</b-table-column>
                 </template>
               </b-table>
             </div>
@@ -90,6 +128,7 @@
 
 <script>
 import Mock from '~/assets/mock.json';
+import AnimatedNumber from "animated-number-vue";
 
 const datesAreOnSameDay = (first, second) =>
   first.getFullYear() === second.getFullYear() &&
@@ -97,6 +136,7 @@ const datesAreOnSameDay = (first, second) =>
   first.getDate() === second.getDate();
 
 export default {
+  components: { AnimatedNumber },
   data: () => ({
     threats: Mock.threats,
     chartOptions: {
@@ -259,3 +299,10 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+section {
+  background: url(/_nuxt/assets/background.png) no-repeat bottom -220px right -350px;
+  background-size: 1000px;
+}
+</style>
