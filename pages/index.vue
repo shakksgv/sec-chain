@@ -302,7 +302,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background: url(/_nuxt/assets/background.png) no-repeat bottom -220px right -350px;
+  background: url("~assets/background.png") no-repeat bottom -220px right -350px;
   background-size: 1000px;
 }
 </style>
