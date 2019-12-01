@@ -24,7 +24,7 @@
                 <h2 class="title is-marginless">Latest threats</h2>
                 <nuxt-link to="/threats">See all</nuxt-link>
               </div>
-              <b-table :data="threats.slice(1, 6)">
+              <b-table :data="threats.slice(0, 5)">
                 <template v-slot="{ row, index }">
                   <b-table-column
                     label="Severity"

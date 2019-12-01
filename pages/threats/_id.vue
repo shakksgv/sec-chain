@@ -4,8 +4,6 @@
       <div class="media">
         <div class="media-content">
           <span class="is-size-5 has-text-weight-semibold">{{ threat.name }}</span>
-          <div>Resolution: {{ threat.resolution || 'None' }}</div>
-
           <div>
             <b-icon
               icon="clock"
@@ -13,33 +11,42 @@
             />
             {{ threat.date }}
           </div>
+          <div class="level-left">Resolution: &nbsp;
+            <b-select v-model="threat.resolution">
+              <option value="">None</option>
+              <option value="F/P">F/P</option>
+              <option value="Positive">Positive</option>
+            </b-select>
+          </div>
         </div>
       </div>
 
       <div class="media grow">
         <div class="media-content">
-          <div>
+          <div class="level-left">
             <b-icon
               icon="alert"
               size="is-small"
             />
-            Severity: {{ threat.severity }}</div>
+            &nbsp; Severity: &nbsp;
+            <b-select v-model="threat.severity">
+              <option value="Info">Info</option>
+              <option value="Critical">Critical</option>
+            </b-select>
+          </div>
           <div>
             <b-icon
               icon="account"
               size="is-small"
             />
             Assignee: {{ threat.assigned_analist }}</div>
-          <small>
+          <small v-if="threat.details.comments.length">
             <b-icon
               icon="comment"
               size="is-small"
             />
             Comment:
-            <span
-              class="has-text-grey"
-              v-if="threat.details.comments.length"
-            >
+            <span class="has-text-grey">
               {{ threat.details.comments[0].text }}
             </span>
           </small>
@@ -85,16 +92,47 @@
               :key="i"
             >
               <div class="card">
+                <div class="card-header has-background-primary">
+                  <p class="card-header-title has-text-white">
+                    {{ alert.source }}
+                  </p>
+                </div>
                 <div class="card-content">
                   <b>{{ alert.name }}</b>
                   <div>
                     {{ alert.description }}
                   </div>
-                  <div>
-                    <small>{{ alert.time }}</small>
+                  <template v-if="alert['Malicious_detections']">
+                    <div v-if="alert.text">
+                      <small>{{ alert.text }}</small>
+                    </div>
+                    <ul v-if="alert['Malicious_detections'].length">
+                      <li
+                        v-for="(d, i) in alert['Malicious_detections']"
+                        :key="i"
+                      >
+                        <small>- {{ d }}</small>
+                      </li>
+                    </ul>
+                  </template>
+
+                  <div v-if="alert.signature">
+                    <small>Signature: {{ alert.signature }}</small>
                   </div>
+
                   <br />
                   <div>{{ alert.number_event || 0 }} event(-s)</div>
+                  <div class="level">
+                    <small>{{ alert.time }}</small>
+                    <small v-if="alert.dest_host">
+                      <b-icon
+                        icon="earth"
+                        size="is-small"
+                      />
+                      Destination: &nbsp;
+                      {{ alert.dest_host }}
+                    </small>
+                  </div>
                 </div>
               </div>
             </div>

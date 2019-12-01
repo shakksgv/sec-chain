@@ -6,6 +6,7 @@
       "severity": "Info",
       "assigned_analist": "John Snow",
       "status": "Open",
+      "resolution": "",
       "tier": 1,
       "details": {
         "comments": [
@@ -40,7 +41,8 @@
             "description": "Scan performed by playbook",
             "number_event": 1,
             "time": "10.12.2019 13:59",
-            "Malicious_detections": []
+            "Malicious_detections": [],
+            "text": "No vulnerable packages"
           },
           {
             "source": "Umbrella",
@@ -93,7 +95,8 @@
             "description": "Scan performed by playbook",
             "number_event": 1,
             "time": "10.12.2019 13:59",
-            "Malicious_detections": []
+            "Malicious_detections": [],
+            "text": "No vulnerable packages"
           },
           {
             "source": "Umbrella",
@@ -146,7 +149,8 @@
             "description": "Scan performed by playbook",
             "number_event": 1,
             "time": "10.12.2019 13:59",
-            "Malicious_detections": []
+            "Malicious_detections": [],
+            "text": "No vulnerable packages"
           },
           {
             "source": "Umbrella",
@@ -199,7 +203,8 @@
             "description": "Scan performed by playbook",
             "number_event": 1,
             "time": "10.12.2019 13:59",
-            "Malicious_detections": []
+            "Malicious_detections": [],
+            "text": "No vulnerable packages"
           },
           {
             "source": "Umbrella",
@@ -216,6 +221,7 @@
       "date": "11.27.2019",
       "severity": "Critical",
       "assigned_analist": "John Snow",
+      "resolution": "",
       "status": "Open",
       "tier": 1,
       "details": {
@@ -250,7 +256,8 @@
             "time": "10.10.2019 13:21",
             "Malicious_detections": [
               "C://SuperNews.exe"
-            ]
+            ],
+            "text": "Malicious file detection"
           },
           {
             "source": "Umbrella",
@@ -311,7 +318,8 @@
             "description": "Scan performed by playbook",
             "number_event": 1,
             "time": "10.12.2019 13:59",
-            "Malicious_detections": []
+            "Malicious_detections": [],
+            "text": "No vulnerable packages"
           },
           {
             "source": "Umbrella",
@@ -329,6 +337,7 @@
       "severity": "Critical",
       "assigned_analist": "John Snow",
       "status": "Open",
+      "resolution": "",
       "tier": 1,
       "details": {
         "comments": [],
@@ -362,7 +371,8 @@
             "time": "10.10.2019 13:21",
             "Malicious_detections": [
               "C://SuperNews.exe"
-            ]
+            ],
+            "text": "Malicious file detection"
           },
           {
             "source": "Umbrella",
@@ -422,7 +432,8 @@
             "time": "10.10.2019 13:21",
             "Malicious_detections": [
               "C://SuperNews.exe"
-            ]
+            ],
+            "text": "Malicious file detection"
           },
           {
             "source": "Umbrella",
